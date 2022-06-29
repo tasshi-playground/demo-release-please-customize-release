@@ -1,0 +1,40 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          command: manifest
+      - run: |
+          echo 'packages/package-a: release_created: ${{ steps.release.outputs.releases_created }}'
+          echo 'packages/package-a: upload_url: ${{ steps.release.outputs['packages/package-a--upload_url'] }}'
+          echo 'packages/package-a: html_url: ${{ steps.release.outputs['packages/package-a--html_url'] }}'
+          echo 'packages/package-a: tag_name: ${{ steps.release.outputs['packages/package-a--tag_name'] }}'
+          echo 'packages/package-a: major: ${{ steps.release.outputs['packages/package-a--major'] }}'
+          echo 'packages/package-a: minor: ${{ steps.release.outputs['packages/package-a--minor'] }}'
+          echo 'packages/package-a: patch: ${{ steps.release.outputs['packages/package-a--patch'] }}'
+          echo 'packages/package-a: sha: ${{ steps.release.outputs['packages/package-a--sha'] }}'
+          echo 'packages/package-a: pr: ${{ steps.release.outputs['packages/package-a--pr'] }}'
+          echo 'packages/package-b: upload_url: ${{ steps.release.outputs['packages/package-b--upload_url'] }}'
+          echo 'packages/package-b: html_url: ${{ steps.release.outputs['packages/package-b--html_url'] }}'
+          echo 'packages/package-b: tag_name: ${{ steps.release.outputs['packages/package-b--tag_name'] }}'
+          echo 'packages/package-b: major: ${{ steps.release.outputs['packages/package-b--major'] }}'
+          echo 'packages/package-b: minor: ${{ steps.release.outputs['packages/package-b--minor'] }}'
+          echo 'packages/package-b: patch: ${{ steps.release.outputs['packages/package-b--patch'] }}'
+          echo 'packages/package-b: sha: ${{ steps.release.outputs['packages/package-b--sha'] }}'
+          echo 'packages/package-b: pr: ${{ steps.release.outputs['packages/package-b--pr'] }}'
+          echo 'packages/package-c: upload_url: ${{ steps.release.outputs['packages/package-c--upload_url'] }}'
+          echo 'packages/package-c: html_url: ${{ steps.release.outputs['packages/package-c--html_url'] }}'
+          echo 'packages/package-c: tag_name: ${{ steps.release.outputs['packages/package-c--tag_name'] }}'
+          echo 'packages/package-c: major: ${{ steps.release.outputs['packages/package-c--major'] }}'
+          echo 'packages/package-c: minor: ${{ steps.release.outputs['packages/package-c--minor'] }}'
+          echo 'packages/package-c: patch: ${{ steps.release.outputs['packages/package-c--patch'] }}'
+          echo 'packages/package-c: sha: ${{ steps.release.outputs['packages/package-c--sha'] }}'
+          echo 'packages/package-c: pr: ${{ steps.release.outputs['packages/package-c--pr'] }}'

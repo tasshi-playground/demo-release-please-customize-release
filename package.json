@@ -1,0 +1,16 @@
+{
+  "name": "@tasshi/demo-monorepo-release-please",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tasshi-playground/demo-monorepo-release-please.git",
+  "author": "Masaharu TASHIRO <masatsr.kit@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "devDependencies": {
+    "release-please": "^13.18.6"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "release-type": "node",
+  "draft": false,
+  "prerelease": false,
+  "changelog-path": "CHANGELOG.md",
+  "versioning": "default",
+  "include-v-in-tag": false,
+  "tag-separator": "@",
+  "monorepo-tags": true,
+  "plugins": ["node-workspace"],
+  "group-pull-request-title-pattern": "chore: release ${branch}",
+  "packages": {
+    "packages/package-a": {
+      "package-name": "@kintone/package-a"
+    },
+    "packages/package-b": {
+      "package-name": "@kintone/package-b"
+    }
+  }
+}
