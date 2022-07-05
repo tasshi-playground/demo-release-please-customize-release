@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.1](https://github.com/tasshi-playground/demo-release-please-customize-release/compare/package-b@3.1.0...package-b@3.1.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* **package-b:** fix after release-please 1 ([cf9b55f](https://github.com/tasshi-playground/demo-release-please-customize-release/commit/cf9b55f6f75cf9823b898e5d44e438a2219ebb59))
+
 ## [3.1.0](https://github.com/tasshi-playground/demo-release-please-customize-release/compare/package-b-v3.0.0...package-b@3.1.0) (2022-07-05)
 
 
