@@ -7,3 +7,9 @@
 
 * **package-b:** feat after release-please 1 ([5b6aa92](https://github.com/tasshi-playground/demo-release-please-customize-release/commit/5b6aa9280a1b1594feebc361e48e9f5105630fb8))
 * **package-b:** feat before release-please 1 ([70e525e](https://github.com/tasshi-playground/demo-release-please-customize-release/commit/70e525e071cee4546b8aa9cf9cc0ffe48e8b7419))
+
+## 2.0.0 (hogehoge)
+
+### Feature
+
+- feat before release-please 1
