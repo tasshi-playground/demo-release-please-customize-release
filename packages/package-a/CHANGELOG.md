@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/tasshi-playground/demo-release-please-customize-release/compare/package-a@2.0.1...package-a@2.1.0) (2022-07-05)
+
+
+### Features
+
+* **package-a:** feat after release-please 1 ([9b24168](https://github.com/tasshi-playground/demo-release-please-customize-release/commit/9b2416840f3041b0a4a6557a9c95856074649e31))
+
 ## [2.0.1](https://github.com/tasshi-playground/demo-release-please-customize-release/compare/package-a-v2.0.0...package-a@2.0.1) (2022-07-05)
 
 
